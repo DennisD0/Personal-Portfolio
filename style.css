@@ -45,7 +45,7 @@ nav ul li a::after{
     content: '';
     width: 0;
     height: 3px;
-    background: #0055ff;
+    background: #00c8ff;
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -63,7 +63,7 @@ nav ul li a:hover::after{
     font-weight: bolder;
 }
     .name span:nth-child(10n + 1){
-    color: #00fffb;
+    color: #00c8ff;
 }
 
     .name span:nth-child(10n + 2){
