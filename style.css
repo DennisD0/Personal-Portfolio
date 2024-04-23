@@ -38,8 +38,23 @@ nav ul li a{
     color: white;
     text-decoration: none;
     font-size: 18px;
+    position: relative;
 }
 
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #0055ff;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
 
 .name{
     width: 140px;
@@ -48,7 +63,7 @@ nav ul li a{
     font-weight: bolder;
 }
     .name span:nth-child(10n + 1){
-    color: #A100FF;
+    color: #00fffb;
 }
 
     .name span:nth-child(10n + 2){
