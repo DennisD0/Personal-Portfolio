@@ -127,18 +127,18 @@ nav ul li a:hover::after{
   
   @keyframes first-typing {
     from { width: 0 }
-    to { width: 37% }
+    to { width: 34% }
 
  }
 
  @keyframes second-typing {
     from { width: 0 }
-    to { width: 87% }
+    to { width: 100% }
  }
 
  @keyframes third-typing {
     from { width: 0 }
-    to { width: 100% }
+    to { width: 94% }
  }
 
 
