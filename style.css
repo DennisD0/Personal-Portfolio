@@ -92,20 +92,53 @@ nav ul li a:hover::after{
     font-size: 24px;
   }
   
-  .typed {
+  .first{
     overflow: hidden;
     white-space: nowrap;
-    width: 0;
-    animation: typing;
-    animation-duration: 1.5s;
-    animation-timing-function: steps(30, end);
+    border-right: 2px solid #00c8ff;
+    width:0;
+    animation: first-typing;
+    animation-duration: 2s;
+    animation-timing-function: steps(25, end);
+    animation-fill-mode: forwards;
+  }
+
+  .second{
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid #00c8ff;
+    width:0;
+    animation: second-typing;
+    animation-duration: 2s;
+    animation-timing-function: steps(25, end);
+    animation-fill-mode: forwards;
+  }
+
+  .third{
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid #00c8ff;
+    width:0;
+    animation: third-typing;
+    animation-duration: 2s;
+    animation-timing-function: steps(25, end);
     animation-fill-mode: forwards;
   }
   
-  @keyframes typing {
+  @keyframes first-typing {
+    from { width: 0 }
+    to { width: 37% }
+
+ }
+
+ @keyframes second-typing {
+    from { width: 0 }
+    to { width: 87% }
+ }
+
+ @keyframes third-typing {
     from { width: 0 }
     to { width: 100% }
  }
-
 
 
