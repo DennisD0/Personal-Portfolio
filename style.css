@@ -4,6 +4,7 @@
     font-family: sans-serif;
     box-sizing: border-box;
 }
+
 body{
     background: #000000;
     color: #ffffff;
@@ -19,6 +20,21 @@ body{
     padding: 10px 10%;
 
 }
+
+.name{
+    width: 140px;
+    font-family: sans-serif;
+    font-size: 40px;
+    font-weight: bolder;
+}
+    .name span:nth-child(10n + 1){
+    color: #00c8ff;
+}
+
+    .name span:nth-child(10n + 2){
+    color: white;
+}
+
 
 nav{
     display: flex;
@@ -56,17 +72,40 @@ nav ul li a:hover::after{
     width: 100%;
 }
 
-.name{
-    width: 140px;
-    font-family: sans-serif;
-    font-size: xxx-large;
-    font-weight: bolder;
-}
-    .name span:nth-child(10n + 1){
-    color: #00c8ff;
+.header-text{
+    margin-top: 20%;
+    font-size: 30px;
 }
 
-    .name span:nth-child(10n + 2){
-    color: white;
+.header-text h1{
+    font-size: 60px;
+    margin-top: 20px;
 }
+
+.header-text h1 span{
+    color:#00c8ff;  
+}
+
+.header-text{
+    display: inline-block;
+    font-family: "arial";
+    font-size: 24px;
+  }
+  
+  .typed {1
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
+    animation: typing;
+    animation-duration: 1.5s;
+    animation-timing-function: steps(30, end);
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+ }
+
+
 
