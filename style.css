@@ -173,6 +173,14 @@ nav ul li a:hover::after{
     color: white;
 }
 
+.sub-title span:nth-child(10n + 1){
+    color: white;
+}
+
+.sub-title span:nth-child(10n + 2){
+    color: #00c8ff;
+}
+
 .tab-titles{
     display: flex;
     margin: 20px 0 40px;
