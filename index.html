@@ -15,15 +15,15 @@
             <div class = "name">
                 <span>D</span><span>ennis</span> 
             </div>
-            
-
-            <ul>
-                <li> <a href= "#"> Home </a></li>
-                <li> <a href= "#"> About Me </a></li>
-                <li> <a href= "#"> Interests </a></li>
-                <li> <a href= "#"> Projects </a></li>
-                <li> <a href= "#"> Contact </a></li>
-            </ul>
+            <ul id="sidemenu">
+                <li><a href="#header"> Home</a></li>
+                <li><a href="#about"> About</a></li>
+                <li><a href="#services"> Services</a></li>
+                <li><a href="#portfolio"> Portfolio</a></li>
+                <li><a href="#contact"> Contact</a></li>
+                <i class="fa-solid fa-square-xmark" onclick="closemenu()"></i>
+              </ul>
+              <i class="fa-solid fa-bars" onclick="openmenu()"></i>
         </nav>
         <div class="header-text">
             <p class = "first">Web Developer</p>
@@ -42,23 +42,217 @@
                 <img src="images/user.jpg">
             </div>
             <div class ="about-col-2">
-                <h1 class = "sub-title"><span>About</span> <span>Me</span></h1>     
+                <h1 class = "sub-title"><span>About</span> <span>Me</sp an></h1>     
                 <p>As a Computer Science student at Queens College, 
                     I'm actively involved in tech projects, 
                     managing marketing for Code for All, serving on the ISACA Club board, 
                     and handling social media for ALPFA. My internship at Ludlow Barrett Associates 
                     showcased my adaptability and teamwork in fintech projects. Proficient in C++, Java, HTML, CSS, and JavaScript, 
-                    I'm eager to contribute my skills to impactful projects in a professional environment.</p>
-
-
-                    <div class ="tab-titles">
-                        <p class ="tab-links">Skills</p>
-                        <p class ="tab-links">Experience</p>
-                        <p class ="tab-links">Education</p>
+                    I'm eager to contribute my skills to impactful projects in a professional environment.
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">
+                      Skills
+                    </p>
+                    <p class="tab-links" onclick="opentab('experience')">
+                      Experience
+                    </p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                  </div>
+      
+            <!-- skills -->
+                  <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                      <li><span>Languages</span><br />
+                        • C++
+                        • Java
+                        • HTML
+                        • CSS
+                        • JavaScript
+                        • Python
+                      </li>
+                      <li>
+                        <span>Softwares</span><br />
+                        • VSCode
+                        • Replit
+                        • Github
+                        • Excel
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="tab-contents" id="experience">
+                    <ul>
+                      <li>
+                        <span>Headstarter AI Software Engineering Fellowship</span><br />
+                        - Incoming 2024 Cohort <br>
+                        • Accepted into Headstarter AI's Software Engineering fellowship to develop five AI projects with goals of 1,000 sign-ups or $1,000 revenue
+                      </li>
+                      <li>
+                        <span>J.P Morgan Forage SWE Job Simulation</span><br />
+                        
+                        • Configured a local development environment by downloading required files, tools, and dependencies <br>
+                        • Resolved issues in repository files to ensure the web application displayed correctly <br>
+                        • Implemented JPMorgan Chase's open-source library, Perspective, to create a live graph for visualizing data feeds for traders
+                      </li>
+                      <li>
+                    </ul>
+                  </div>
+                  <div class="tab-contents" id="education">
+                    <ul>
+                      <li>
+                        <span>CUNY Queens College</span><br />
+                        • Major: B.A Computer Science
+                        <!-- • 
+                        •
+                        • -->
+                      </li>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+            <!-- services -->
+            <div id="services">
+              <div class="container">
+                <h1 class="sub-title">My Future Focuses</h1>
+                <div class="services-list">
+                  <div>
+                    <i class="fa-solid fa-code-fork"></i>
+                    <h2>Web Design</h2>
+                    <!-- <p>Wander Woods Hiking Website</p> -->
+                    <a href="#">Learn more</a>
+                  </div>
+      
+                  <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UI/UX Design</h2>
+                    <!-- <p>ui</p> -->
+                    <a href="#">Learn more</a>
+                  </div>
+      
+                  <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <!-- <p>App</p> -->
+                    <a href="#">Learn more</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+          <!-- portfolio -->
+      
+          <div id="portfolio">
+            <div class="container">
+              <h1 class="sub-title">My Hobbies</h1>
+              <div class="work-list">
+      
+                <div class="work">
+                  <img src="images/Car.png">
+                  <div class="layer">
+                    <h3>Cars</h3>
+                    <p>I grew up a car enthusiast. I absolutely love cars, and also like to take aesthetic pictures of them as well. Fun Fact: I developed my own composite suspension for a racecar </p>
+                    <a href="#"><i class="fa-solid fa-car" style="color: #2ea126;"></i></a> 
+                  </div>
+                </div>
+      
+                  <div class="work">
+                    <img src="images/TheCrew.png">
+                    <div class="layer">
+                      <h3>Coding with The Crew</h3>
+                      <p>I really enjoy coding with my friends. We usually like to pair program and work on various different projects together</p>
+                      <a href="#"><i class="fa-solid fa-people-group" style="color: #2ea126;"></i></a> 
                     </div>
-            </div>    
-        </div>
-    </div>
-</div>
-</body>
-</html>
+                  </div>
+      
+                    <div class="work">
+                      <img src="images/Stocks1.jpg">
+                      <div class="layer">
+                    <h3>Stock Market</h3>
+                    <p>I have recently taken an interest in the stock market. I find it to be challenging and constantyl changing which is what intrigues me about it.</p>
+                    <a href="#"><i class="fa-solid fa-money-bill-trend-up" style="color: #2ea126;"></i></a> 
+                  </div>
+                </div>
+                </div>
+                <a href="#" class="btn">See more</a>
+      
+      
+              </div>
+            </div>
+      
+                <!----------------contact ----------->
+          <div id="contact">
+            <div class="container">
+              <div class="row">
+                <div class="contact-left">
+                  <h1 class="sub-title">Contact Me</h1>
+                  <p>
+                    <i class="fa-solid fa-paper-plane"></i>Moazamh123@gmail.com
+                  </p>
+                  <p><i class="fa-solid fa-phone"></i>917-702-8991</p>
+                  <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/moazam-hussain-29540b199/"
+                      ><i class="fa-brands fa-linkedin"></i
+                    ></a>
+                    <a href="https://www.instagram.com/sharlynshanel/ "
+                      ><i class="fa-brands fa-instagram"></i
+                    ></a>
+                  </div>
+                  <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                  <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required />
+                    <input
+                      type="email"
+                      name=" email"
+                      placeholder="Your Email"
+                      required
+                    />
+                    <textarea
+                      name="Message"
+                      rows="6"
+                      placeholder="Your Message"
+                    ></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                  </form>
+                  <span id="msg"></span>
+                </div>
+              </div>
+            </div>
+            <div class="copyright">
+              <p>Copyright  Moazam.<i class="fa-solid fa-fire" style="color: #de6b0d;"></i></p>
+            </div>
+          </div>
+      
+          
+          <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+            function opentab(tabname) {
+              for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+              }
+              for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+              }
+              event.currentTarget.classList.add("active-link");
+              document.getElementById(tabname).classList.add("active-tab");
+            }
+          </script>
+          <script>
+            var sidemenu = document.getElementById("sidemenu");
+      
+            function openmenu() {
+              sidemenu.style.right = "0";
+            }
+            function closemenu() {
+              sidemenu.style.right = "-200px";
+            }
+          </script>
+        </body>
+      </html>
