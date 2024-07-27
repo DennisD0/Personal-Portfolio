@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- adapting to different screen sizes -->
     <title> Dennis's Website </title> <!-- title for the tab -->
     <link rel="stylesheet" href="style.css"> <!-- links style.css file -->
-
+    <script src="https://kit.fontawesome.com/57a42109b2.js" crossorigin="anonymous"></script>
 </head>
 <body>
    <div id = "header">
@@ -21,9 +21,7 @@
                 <li><a href="#services"> Services</a></li>
                 <li><a href="#portfolio"> Portfolio</a></li>
                 <li><a href="#contact"> Contact</a></li>
-                <i class="fa-solid fa-square-xmark" onclick="closemenu()"></i>
-              </ul>
-              <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+              </ul>   
         </nav>
         <div class="header-text">
             <p class = "first">Web Developer</p>
@@ -43,13 +41,7 @@
             </div>
             <div class ="about-col-2">
                 <h1 class = "sub-title"><span>About</span> <span>Me</sp an></h1>     
-                <p>As a Computer Science student at Queens College, 
-                    I'm actively involved in tech projects, 
-                    managing marketing for Code for All, serving on the ISACA Club board, 
-                    and handling social media for ALPFA. My internship at Ludlow Barrett Associates 
-                    showcased my adaptability and teamwork in fintech projects. Proficient in C++, Java, HTML, CSS, and JavaScript, 
-                    I'm eager to contribute my skills to impactful projects in a professional environment.
-                </p>
+                <p>As a web developer and Computer Science student at CUNY Queens College, I am deeply engaged with technology and its potential to solve real-world problems. My technical skills include Java, C++, C#, HTML, CSS, and JavaScript. I’ve had the opportunity to work on diverse projects such as EmpathiRead, a Chrome extension for web accessibility, and GreenIQ, a dynamic web application, as well as VR experiences with Unity. I’m excited to be an incoming Headstarter AI Software Engineering Fellow, where I’ll develop AI-driven projects to drive user engagement, and also to teach HTML, CSS, and JavaScript as a CodePath Tech Fellow. My professional experience includes roles as a Web3 Security Data Analyst at Webacy and a Software Engineer Intern at the Research Foundation of CUNY. In addition to my technical pursuits, I’ve led community initiatives as Digital Communications Coordinator for ALPFA and Social Media Coordinator for ISACA. I’m passionate about leveraging technology to innovate and make a meaningful impact
                 <div class="tab-titles">
                     <p class="tab-links active-link" onclick="opentab('skills')">
                       Skills
@@ -64,36 +56,67 @@
                   <div class="tab-contents active-tab" id="skills">
                     <ul>
                       <li><span>Languages</span><br />
-                        • C++
-                        • Java
-                        • HTML
-                        • CSS
-                        • JavaScript
-                        • Python
+                        • C++<br />
+                        • Java<br />
+                        • C#<br />
+                        • HTML<br />
+                        • CSS<br />
+                        • JavaScript<br />
                       </li>
                       <li>
-                        <span>Softwares</span><br />
-                        • VSCode
-                        • Replit
-                        • Github
-                        • Excel
+                        <span>Softwares</span><br/>
+                        • React<br />
+                        • Git<br />
+                        • Figma<br />
+                        • Google Colab<br />
+                        • Google Apps Script<br />
+                        • Unity<br />
+                        • Replit<br />
+                        • Github<br />
+                        • Google Sheets<br />
                       </li>
                     </ul>
                   </div>
                   <div class="tab-contents" id="experience">
                     <ul>
                       <li>
-                        <span>Headstarter AI Software Engineering Fellowship</span><br />
-                        - Incoming 2024 Cohort <br>
-                        • Accepted into Headstarter AI's Software Engineering fellowship to develop five AI projects with goals of 1,000 sign-ups or $1,000 revenue
-                      </li>
+                        <span>Intel</span><br />
+                        Student Ambassador<br>
+                        • Selected as an Intel Student Ambassador to organize AI workshops, promote Intel tools, and develop projects using Intel technologies
                       <li>
-                        <span>J.P Morgan Forage SWE Job Simulation</span><br />
                         
-                        • Configured a local development environment by downloading required files, tools, and dependencies <br>
-                        • Resolved issues in repository files to ensure the web application displayed correctly <br>
-                        • Implemented JPMorgan Chase's open-source library, Perspective, to create a live graph for visualizing data feeds for traders
-                      </li>
+                      <li>
+                        <span>Headstarter AI</span><br />
+                        Software Engineering Fellowship<br>
+                        • Accepted into HeadStarter AI's Software Engineering Fellowship, developing five AI projects in 7 weeks with goals of 1,000 accounts or $1,000 in revenue
+                      <li>
+
+                      <li>
+                        <span>CodePath</span><br />
+                       TechFellow<br>
+                       • Selected as a CodePath Tech Fellow for Fall 2024, assisting with teaching HTML, CSS, and JavaScript, supporting the 10-week course, and promoting CodePath on campus
+                      <li>
+
+                      <li>
+                        <span>DataDog</span><br />
+                        DataPUPS: Preparing Undergrad Programmers for Success<br>
+                        • Selected as one of 20 from hundreds of applicants;  developed skills with Datadog engineers, networked, experienced intern life, and joined team activities
+                      <li>
+
+                      <li>
+                        <span>Extern</span><br />
+                        Webacy Web3 Security Data Analyst<br>
+                        • Profiled risks with unsupervised machine learning for cluster analysis, identifying patterns in smart contracts<br>
+                        • Leveraged Python and Google Colab for detailed data analysis and visualization, uncovering insights into smart contract vulnerabilities<br>
+                        • Conducted frequency and correlation analysis of risk tags, pinpointing key vulnerabilities and their associations
+                      <li>
+
+                      <li>
+                        <span>Research Foundation of City University of New York</span><br />
+                        Software Engineer Intern<br>
+                        • Orchestrated the management of a NoSQL database dedicated to small startup grants, optimizing data accessibility and integrity<br>
+                        • Implemented JavaScript automation to enhance database functionality, resulting in a 15% increase in data retrieval speed and accuracy<br>
+                        • Attained an 80% client retention rate by ensuring precise data delivery to the marketing team, empowering targeted strategies and initiatives                        
                       <li>
                     </ul>
                   </div>
@@ -101,10 +124,9 @@
                     <ul>
                       <li>
                         <span>CUNY Queens College</span><br />
-                        • Major: B.A Computer Science
-                        <!-- • 
-                        •
-                        • -->
+                        • Major: B.A Computer Science<br />
+                        • Relevant Courseworks:Intro to Algorithmic Problem Solving in C++, Data Structures and Algorithms, Object Oriented Programming in Java and C++,  Discrete Mathematics, Computer Organization and Assembly Language, Calculus I and II, Codepath Web 101<br />  
+                        • Awards and Certifications: Dean’s List 2022,  CodePath Certificate, Externship Certificate, Forage J.P. Morgan SWE Certificate<br />
                       </li>
                       </li>
                     </ul>
@@ -117,7 +139,7 @@
             <!-- services -->
             <div id="services">
               <div class="container">
-                <h1 class="sub-title">My Future Focuses</h1>
+                <h1 class="sub-title">My Hobbies</h1>
                 <div class="services-list">
                   <div>
                     <i class="fa-solid fa-code-fork"></i>
@@ -148,37 +170,38 @@
       
           <div id="portfolio">
             <div class="container">
-              <h1 class="sub-title">My Hobbies</h1>
+              <h1 class="sub-title">My Projects</h1>
               <div class="work-list">
       
                 <div class="work">
-                  <img src="images/Car.png">
+                  <img src="images/EmpathiRead.jpg">
                   <div class="layer">
-                    <h3>Cars</h3>
-                    <p>I grew up a car enthusiast. I absolutely love cars, and also like to take aesthetic pictures of them as well. Fun Fact: I developed my own composite suspension for a racecar </p>
-                    <a href="#"><i class="fa-solid fa-car" style="color: #2ea126;"></i></a> 
+                    <h3>EmpathiRead</h3>
+                    <p>At UC Berkeley's AI Hackathon, I developed EmpathiRead, a Chrome extension that simplifies web content for users with reading disabilities using NLP models, built with React.js, TypeScript, Node.js, HTML, and CSS</p>
+                    <a href="#"><i class="fa-solid fa-notes-medical"></i></a> 
                   </div>
                 </div>
       
                   <div class="work">
-                    <img src="images/TheCrew.png">
+                    <img src="images/GreenIQ.jpg">
                     <div class="layer">
-                      <h3>Coding with The Crew</h3>
-                      <p>I really enjoy coding with my friends. We usually like to pair program and work on various different projects together</p>
-                      <a href="#"><i class="fa-solid fa-people-group" style="color: #2ea126;"></i></a> 
+                      <h3>GreenIQ</h3>
+                      <p>
+                        I led a 4-member team, using GitHub for collaboration. I designed wireframes in Figma and implemented a dynamic UI in ReactJS with a login system and real-time leaderboard</p>
+                      <a href="#"><i class="fa-solid fa-seedling"></i></a> 
                     </div>
                   </div>
       
                     <div class="work">
-                      <img src="images/Stocks1.jpg">
+                      <img src="images/RoomPlanner.jpg">
                       <div class="layer">
-                    <h3>Stock Market</h3>
-                    <p>I have recently taken an interest in the stock market. I find it to be challenging and constantyl changing which is what intrigues me about it.</p>
-                    <a href="#"><i class="fa-solid fa-money-bill-trend-up" style="color: #2ea126;"></i></a> 
+                    <h3>RoomPlanner</h3>
+                    <p>I completed an 8-week Unity VR boot camp, designing apps with XR Grab Interactable for dynamic furniture placement and optimizing controls with C# scripting and Unity's XR framework</p>
+                    <a href="#"><i class="fa-brands fa-unity"></i></a> 
                   </div>
                 </div>
                 </div>
-                <a href="#" class="btn">See more</a>
+                <a href="#" class="btn">Back to top</a>
       
       
               </div>
@@ -191,14 +214,14 @@
                 <div class="contact-left">
                   <h1 class="sub-title">Contact Me</h1>
                   <p>
-                    <i class="fa-solid fa-paper-plane"></i>Moazamh123@gmail.com
+                    <i class="fa-solid fa-paper-plane"></i>dennisnasa@gmail.com
                   </p>
-                  <p><i class="fa-solid fa-phone"></i>917-702-8991</p>
+                  <p><i class="fa-solid fa-phone"></i>917-887-1991</p>
                   <div class="social-icons">
-                    <a href="https://www.linkedin.com/in/moazam-hussain-29540b199/"
+                    <a href="https://www.linkedin.com/in/dennis-do-coding/"
                       ><i class="fa-brands fa-linkedin"></i
                     ></a>
-                    <a href="https://www.instagram.com/sharlynshanel/ "
+                    <a href="https://www.instagram.com/denn1s.d0/"
                       ><i class="fa-brands fa-instagram"></i
                     ></a>
                   </div>
@@ -225,7 +248,7 @@
               </div>
             </div>
             <div class="copyright">
-              <p>Copyright  Moazam.<i class="fa-solid fa-fire" style="color: #de6b0d;"></i></p>
+              <p>Made by Dennis<i class="fa-solid fa-fire" style="color: #de6b0d;"></i></p>
             </div>
           </div>
       
