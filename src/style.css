@@ -51,6 +51,12 @@ body {
   font-feature-settings: "ss01" on, "ss02" on;
 }
 
+/* Use Fraunces' display optical size everywhere it's used as a heading font,
+   so small headings don't pick up the swashy "text" cut (e.g. the looped f). */
+.font-display {
+  font-variation-settings: "opsz" 144;
+}
+
 ::selection {
   background-color: var(--color-accent);
   color: var(--color-cream);
