@@ -141,11 +141,7 @@ body {
   color: var(--color-accent);
 }
 
-/* Experience timeline flow line */
-#timeline-glow-path {
-  filter: drop-shadow(0 0 2px var(--color-ink)) drop-shadow(0 0 8px color-mix(in srgb, var(--color-ink) 55%, transparent));
-  transition: stroke-dashoffset 0.15s linear;
-}
+/* Experience timeline markers */
 .timeline-marker {
   transition: background-color 0.4s ease, border-color 0.4s ease, box-shadow 0.4s ease;
 }
@@ -179,9 +175,6 @@ body {
     animation: none !important;
   }
   #mobile-menu {
-    transition: none;
-  }
-  #timeline-glow-path {
     transition: none;
   }
 }
