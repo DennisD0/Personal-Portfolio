@@ -1,5 +1,14 @@
 import './style.css'
 
+// ----- Always start from the top on load/refresh -----
+if ('scrollRestoration' in history) {
+  history.scrollRestoration = 'manual'
+}
+if (window.location.hash) {
+  history.replaceState(null, '', window.location.pathname + window.location.search)
+}
+window.scrollTo(0, 0)
+
 const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
 
 // ----- Footer year -----

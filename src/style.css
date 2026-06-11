@@ -11,11 +11,11 @@
   --color-ink-soft: #98979d;
   --color-ink-faint: #59585d;
   --color-line: #ffffff14;
-  --color-accent: #dd3c64;
-  --color-accent-light: #f0708d;
-  --color-accent-soft: #fbe2e8;
-  --color-rust: #e8623a;
-  --color-indigo: #818cf8;
+  --color-accent: #d4d4d8;
+  --color-accent-light: #e4e4e7;
+  --color-accent-soft: #f4f4f5;
+  --color-graphite: #71717a;
+  --color-platinum: #ffffff;
   --color-night: #000000;
   --color-night-soft: #1a1a1a;
   --color-cream: #fdfdff;
@@ -42,7 +42,7 @@ body {
 
 ::selection {
   background-color: var(--color-accent);
-  color: var(--color-cream);
+  color: var(--color-paper);
 }
 
 /* Custom scrollbar */
@@ -94,25 +94,6 @@ body {
   -webkit-mask-image: linear-gradient(to right, transparent, black 6%, black 94%, transparent);
 }
 
-/* Skill row hover sweep */
-.skill-row {
-  position: relative;
-  isolation: isolate;
-}
-.skill-row::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-  background: linear-gradient(to right, color-mix(in srgb, var(--color-accent-light) 12%, transparent), transparent);
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
-}
-.skill-row:hover::before {
-  transform: scaleX(1);
-}
-
 /* Dot-grid backdrop */
 .bg-dot-grid {
   background-image: radial-gradient(circle, rgba(244, 241, 233, 0.16) 1px, transparent 1px);
@@ -132,7 +113,7 @@ body {
 
 /* Hero name gradient sweep */
 .hero-gradient-text {
-  background-image: linear-gradient(to right, var(--color-indigo), var(--color-accent), var(--color-rust));
+  background-image: linear-gradient(to right, var(--color-platinum), var(--color-accent), var(--color-graphite));
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;

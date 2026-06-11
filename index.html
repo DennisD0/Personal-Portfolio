@@ -18,7 +18,7 @@
   <body class="bg-paper text-ink antialiased">
     <a
       href="#main"
-      class="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-[100] focus:rounded focus:bg-accent focus:px-4 focus:py-2 focus:text-cream focus:font-mono focus:text-sm"
+      class="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-[100] focus:rounded focus:bg-accent focus:px-4 focus:py-2 focus:text-paper focus:font-mono focus:text-sm"
       >Skip to content</a
     >
 
@@ -58,7 +58,7 @@
           <a
             href="/dennis-do-resume.pdf"
             download
-            class="hidden items-center gap-2 rounded-full border border-accent px-4 py-2 font-mono text-xs uppercase tracking-[0.2em] text-accent transition-colors hover:bg-accent hover:text-cream md:inline-flex cursor-pointer"
+            class="hidden items-center gap-2 rounded-full border border-accent px-4 py-2 font-mono text-xs uppercase tracking-[0.2em] text-accent transition-colors hover:bg-accent hover:text-paper md:inline-flex cursor-pointer"
           >
             R&eacute;sum&eacute;
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-3.5 w-3.5" aria-hidden="true">
@@ -246,7 +246,7 @@
               <div data-reveal style="--reveal-delay:140ms" class="mt-12 max-w-[260px]">
                 <img
                   src="/dennis-portrait.jpg"
-                  alt="Dennis Do smiling outdoors with flowers after his college graduation"
+                  alt="Dennis Do speaking at a podium during his college graduation ceremony"
                   class="aspect-[4/5] w-full rounded-[1.5rem] border border-ink/[0.08] object-cover shadow-2xl shadow-black/40 transition-transform duration-500 ease-out hover:scale-[1.02]"
                 />
                 <p class="mt-6 font-mono text-[11px] uppercase tracking-[0.3em] text-ink-faint">Dennis &mdash; Class of 2026</p>
@@ -328,8 +328,8 @@
                   <stop offset="100%" stop-color="var(--color-ink)" stop-opacity="0" />
                 </linearGradient>
               </defs>
-              <path d="M12,0 C22,28 22,55 12,55 C2,55 2,82 12,110" fill="none" stroke="var(--color-line)" stroke-width="1.5" vector-effect="non-scaling-stroke" />
-              <path id="timeline-glow-path" d="M12,0 C22,28 22,55 12,55 C2,55 2,82 12,110" fill="none" stroke="url(#timeline-fade)" stroke-width="1.5" stroke-linecap="round" vector-effect="non-scaling-stroke" style="stroke-dasharray: 300; stroke-dashoffset: 300" />
+              <path d="M12,0 L12,110" fill="none" stroke="var(--color-line)" stroke-width="1.5" vector-effect="non-scaling-stroke" />
+              <path id="timeline-glow-path" d="M12,0 L12,110" fill="none" stroke="url(#timeline-fade)" stroke-width="1.5" stroke-linecap="round" vector-effect="non-scaling-stroke" style="stroke-dasharray: 300; stroke-dashoffset: 300" />
             </svg>
 
             <!-- 413 Youth Club -->
@@ -617,85 +617,109 @@
 
           <!-- Numbered capability list -->
           <div class="border-t border-line">
-            <div data-reveal style="--reveal-delay:0ms" class="group skill-row flex items-center justify-between gap-6 border-b border-line py-6 transition-colors duration-300 md:py-7">
+            <div data-reveal style="--reveal-delay:0ms" class="flex items-center justify-between gap-6 border-b border-line py-6 transition-colors duration-300 hover:bg-ink/[0.025] md:py-7">
               <div class="flex items-baseline gap-5 md:gap-10">
-                <span class="font-mono text-xs text-ink-faint transition-colors duration-300 group-hover:text-accent md:text-sm">01</span>
-                <span class="font-display text-2xl transition-colors duration-300 group-hover:text-accent md:text-4xl">Product Strategy</span>
+                <span class="font-mono text-xs text-ink-faint md:text-sm">01</span>
+                <span class="font-display text-2xl md:text-4xl">Product Strategy</span>
               </div>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5 shrink-0 text-ink-faint transition-all duration-300 group-hover:translate-x-2 group-hover:text-accent md:h-6 md:w-6" aria-hidden="true">
-                <path d="M5 12h14" />
-                <path d="m12 5 7 7-7 7" />
-              </svg>
+              <div class="flex shrink-0 items-center gap-1.5 md:gap-2" aria-label="Proficiency: 5 of 5">
+                <span class="h-1.5 w-5 rounded-full bg-ink md:w-7" aria-hidden="true"></span>
+                <span class="h-1.5 w-5 rounded-full bg-ink md:w-7" aria-hidden="true"></span>
+                <span class="h-1.5 w-5 rounded-full bg-ink md:w-7" aria-hidden="true"></span>
+                <span class="h-1.5 w-5 rounded-full bg-ink md:w-7" aria-hidden="true"></span>
+                <span class="h-1.5 w-5 rounded-full bg-ink/15 md:w-7" aria-hidden="true"></span>
+              </div>
             </div>
-            <div data-reveal style="--reveal-delay:40ms" class="group skill-row flex items-center justify-between gap-6 border-b border-line py-6 transition-colors duration-300 md:py-7">
+            <div data-reveal style="--reveal-delay:40ms" class="flex items-center justify-between gap-6 border-b border-line py-6 transition-colors duration-300 hover:bg-ink/[0.025] md:py-7">
               <div class="flex items-baseline gap-5 md:gap-10">
-                <span class="font-mono text-xs text-ink-faint transition-colors duration-300 group-hover:text-accent md:text-sm">02</span>
-                <span class="font-display text-2xl transition-colors duration-300 group-hover:text-accent md:text-4xl">UX/UI Design</span>
+                <span class="font-mono text-xs text-ink-faint md:text-sm">02</span>
+                <span class="font-display text-2xl md:text-4xl">UX/UI Design</span>
               </div>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5 shrink-0 text-ink-faint transition-all duration-300 group-hover:translate-x-2 group-hover:text-accent md:h-6 md:w-6" aria-hidden="true">
-                <path d="M5 12h14" />
-                <path d="m12 5 7 7-7 7" />
-              </svg>
+              <div class="flex shrink-0 items-center gap-1.5 md:gap-2" aria-label="Proficiency: 5 of 5">
+                <span class="h-1.5 w-5 rounded-full bg-ink md:w-7" aria-hidden="true"></span>
+                <span class="h-1.5 w-5 rounded-full bg-ink md:w-7" aria-hidden="true"></span>
+                <span class="h-1.5 w-5 rounded-full bg-ink md:w-7" aria-hidden="true"></span>
+                <span class="h-1.5 w-5 rounded-full bg-ink md:w-7" aria-hidden="true"></span>
+                <span class="h-1.5 w-5 rounded-full bg-ink/15 md:w-7" aria-hidden="true"></span>
+              </div>
             </div>
-            <div data-reveal style="--reveal-delay:80ms" class="group skill-row flex items-center justify-between gap-6 border-b border-line py-6 transition-colors duration-300 md:py-7">
+            <div data-reveal style="--reveal-delay:80ms" class="flex items-center justify-between gap-6 border-b border-line py-6 transition-colors duration-300 hover:bg-ink/[0.025] md:py-7">
               <div class="flex items-baseline gap-5 md:gap-10">
-                <span class="font-mono text-xs text-ink-faint transition-colors duration-300 group-hover:text-accent md:text-sm">03</span>
-                <span class="font-display text-2xl transition-colors duration-300 group-hover:text-accent md:text-4xl">Roadmapping</span>
+                <span class="font-mono text-xs text-ink-faint md:text-sm">03</span>
+                <span class="font-display text-2xl md:text-4xl">Roadmapping</span>
               </div>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5 shrink-0 text-ink-faint transition-all duration-300 group-hover:translate-x-2 group-hover:text-accent md:h-6 md:w-6" aria-hidden="true">
-                <path d="M5 12h14" />
-                <path d="m12 5 7 7-7 7" />
-              </svg>
+              <div class="flex shrink-0 items-center gap-1.5 md:gap-2" aria-label="Proficiency: 4 of 5">
+                <span class="h-1.5 w-5 rounded-full bg-ink md:w-7" aria-hidden="true"></span>
+                <span class="h-1.5 w-5 rounded-full bg-ink md:w-7" aria-hidden="true"></span>
+                <span class="h-1.5 w-5 rounded-full bg-ink md:w-7" aria-hidden="true"></span>
+                <span class="h-1.5 w-5 rounded-full bg-ink md:w-7" aria-hidden="true"></span>
+                <span class="h-1.5 w-5 rounded-full bg-ink/15 md:w-7" aria-hidden="true"></span>
+              </div>
             </div>
-            <div data-reveal style="--reveal-delay:120ms" class="group skill-row flex items-center justify-between gap-6 border-b border-line py-6 transition-colors duration-300 md:py-7">
+            <div data-reveal style="--reveal-delay:120ms" class="flex items-center justify-between gap-6 border-b border-line py-6 transition-colors duration-300 hover:bg-ink/[0.025] md:py-7">
               <div class="flex items-baseline gap-5 md:gap-10">
-                <span class="font-mono text-xs text-ink-faint transition-colors duration-300 group-hover:text-accent md:text-sm">04</span>
-                <span class="font-display text-2xl transition-colors duration-300 group-hover:text-accent md:text-4xl">Agile &amp; Scrum</span>
+                <span class="font-mono text-xs text-ink-faint md:text-sm">04</span>
+                <span class="font-display text-2xl md:text-4xl">Agile &amp; Scrum</span>
               </div>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5 shrink-0 text-ink-faint transition-all duration-300 group-hover:translate-x-2 group-hover:text-accent md:h-6 md:w-6" aria-hidden="true">
-                <path d="M5 12h14" />
-                <path d="m12 5 7 7-7 7" />
-              </svg>
+              <div class="flex shrink-0 items-center gap-1.5 md:gap-2" aria-label="Proficiency: 4 of 5">
+                <span class="h-1.5 w-5 rounded-full bg-ink md:w-7" aria-hidden="true"></span>
+                <span class="h-1.5 w-5 rounded-full bg-ink md:w-7" aria-hidden="true"></span>
+                <span class="h-1.5 w-5 rounded-full bg-ink md:w-7" aria-hidden="true"></span>
+                <span class="h-1.5 w-5 rounded-full bg-ink md:w-7" aria-hidden="true"></span>
+                <span class="h-1.5 w-5 rounded-full bg-ink/15 md:w-7" aria-hidden="true"></span>
+              </div>
             </div>
-            <div data-reveal style="--reveal-delay:160ms" class="group skill-row flex items-center justify-between gap-6 border-b border-line py-6 transition-colors duration-300 md:py-7">
+            <div data-reveal style="--reveal-delay:160ms" class="flex items-center justify-between gap-6 border-b border-line py-6 transition-colors duration-300 hover:bg-ink/[0.025] md:py-7">
               <div class="flex items-baseline gap-5 md:gap-10">
-                <span class="font-mono text-xs text-ink-faint transition-colors duration-300 group-hover:text-accent md:text-sm">05</span>
-                <span class="font-display text-2xl transition-colors duration-300 group-hover:text-accent md:text-4xl">Stakeholder Comms</span>
+                <span class="font-mono text-xs text-ink-faint md:text-sm">05</span>
+                <span class="font-display text-2xl md:text-4xl">Stakeholder Comms</span>
               </div>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5 shrink-0 text-ink-faint transition-all duration-300 group-hover:translate-x-2 group-hover:text-accent md:h-6 md:w-6" aria-hidden="true">
-                <path d="M5 12h14" />
-                <path d="m12 5 7 7-7 7" />
-              </svg>
+              <div class="flex shrink-0 items-center gap-1.5 md:gap-2" aria-label="Proficiency: 5 of 5">
+                <span class="h-1.5 w-5 rounded-full bg-ink md:w-7" aria-hidden="true"></span>
+                <span class="h-1.5 w-5 rounded-full bg-ink md:w-7" aria-hidden="true"></span>
+                <span class="h-1.5 w-5 rounded-full bg-ink md:w-7" aria-hidden="true"></span>
+                <span class="h-1.5 w-5 rounded-full bg-ink md:w-7" aria-hidden="true"></span>
+                <span class="h-1.5 w-5 rounded-full bg-ink/15 md:w-7" aria-hidden="true"></span>
+              </div>
             </div>
-            <div data-reveal style="--reveal-delay:200ms" class="group skill-row flex items-center justify-between gap-6 border-b border-line py-6 transition-colors duration-300 md:py-7">
+            <div data-reveal style="--reveal-delay:200ms" class="flex items-center justify-between gap-6 border-b border-line py-6 transition-colors duration-300 hover:bg-ink/[0.025] md:py-7">
               <div class="flex items-baseline gap-5 md:gap-10">
-                <span class="font-mono text-xs text-ink-faint transition-colors duration-300 group-hover:text-accent md:text-sm">06</span>
-                <span class="font-display text-2xl transition-colors duration-300 group-hover:text-accent md:text-4xl">Front-End Dev</span>
+                <span class="font-mono text-xs text-ink-faint md:text-sm">06</span>
+                <span class="font-display text-2xl md:text-4xl">Front-End Dev</span>
               </div>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5 shrink-0 text-ink-faint transition-all duration-300 group-hover:translate-x-2 group-hover:text-accent md:h-6 md:w-6" aria-hidden="true">
-                <path d="M5 12h14" />
-                <path d="m12 5 7 7-7 7" />
-              </svg>
+              <div class="flex shrink-0 items-center gap-1.5 md:gap-2" aria-label="Proficiency: 3 of 5">
+                <span class="h-1.5 w-5 rounded-full bg-ink md:w-7" aria-hidden="true"></span>
+                <span class="h-1.5 w-5 rounded-full bg-ink md:w-7" aria-hidden="true"></span>
+                <span class="h-1.5 w-5 rounded-full bg-ink md:w-7" aria-hidden="true"></span>
+                <span class="h-1.5 w-5 rounded-full bg-ink/15 md:w-7" aria-hidden="true"></span>
+                <span class="h-1.5 w-5 rounded-full bg-ink/15 md:w-7" aria-hidden="true"></span>
+              </div>
             </div>
-            <div data-reveal style="--reveal-delay:240ms" class="group skill-row flex items-center justify-between gap-6 border-b border-line py-6 transition-colors duration-300 md:py-7">
+            <div data-reveal style="--reveal-delay:240ms" class="flex items-center justify-between gap-6 border-b border-line py-6 transition-colors duration-300 hover:bg-ink/[0.025] md:py-7">
               <div class="flex items-baseline gap-5 md:gap-10">
-                <span class="font-mono text-xs text-ink-faint transition-colors duration-300 group-hover:text-accent md:text-sm">07</span>
-                <span class="font-display text-2xl transition-colors duration-300 group-hover:text-accent md:text-4xl">Prototyping</span>
+                <span class="font-mono text-xs text-ink-faint md:text-sm">07</span>
+                <span class="font-display text-2xl md:text-4xl">Prototyping</span>
               </div>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5 shrink-0 text-ink-faint transition-all duration-300 group-hover:translate-x-2 group-hover:text-accent md:h-6 md:w-6" aria-hidden="true">
-                <path d="M5 12h14" />
-                <path d="m12 5 7 7-7 7" />
-              </svg>
+              <div class="flex shrink-0 items-center gap-1.5 md:gap-2" aria-label="Proficiency: 4 of 5">
+                <span class="h-1.5 w-5 rounded-full bg-ink md:w-7" aria-hidden="true"></span>
+                <span class="h-1.5 w-5 rounded-full bg-ink md:w-7" aria-hidden="true"></span>
+                <span class="h-1.5 w-5 rounded-full bg-ink md:w-7" aria-hidden="true"></span>
+                <span class="h-1.5 w-5 rounded-full bg-ink md:w-7" aria-hidden="true"></span>
+                <span class="h-1.5 w-5 rounded-full bg-ink/15 md:w-7" aria-hidden="true"></span>
+              </div>
             </div>
-            <div data-reveal style="--reveal-delay:280ms" class="group skill-row flex items-center justify-between gap-6 border-b border-line py-6 transition-colors duration-300 md:py-7">
+            <div data-reveal style="--reveal-delay:280ms" class="flex items-center justify-between gap-6 border-b border-line py-6 transition-colors duration-300 hover:bg-ink/[0.025] md:py-7">
               <div class="flex items-baseline gap-5 md:gap-10">
-                <span class="font-mono text-xs text-ink-faint transition-colors duration-300 group-hover:text-accent md:text-sm">08</span>
-                <span class="font-display text-2xl transition-colors duration-300 group-hover:text-accent md:text-4xl">Team Leadership</span>
+                <span class="font-mono text-xs text-ink-faint md:text-sm">08</span>
+                <span class="font-display text-2xl md:text-4xl">Team Leadership</span>
               </div>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5 shrink-0 text-ink-faint transition-all duration-300 group-hover:translate-x-2 group-hover:text-accent md:h-6 md:w-6" aria-hidden="true">
-                <path d="M5 12h14" />
-                <path d="m12 5 7 7-7 7" />
-              </svg>
+              <div class="flex shrink-0 items-center gap-1.5 md:gap-2" aria-label="Proficiency: 4 of 5">
+                <span class="h-1.5 w-5 rounded-full bg-ink md:w-7" aria-hidden="true"></span>
+                <span class="h-1.5 w-5 rounded-full bg-ink md:w-7" aria-hidden="true"></span>
+                <span class="h-1.5 w-5 rounded-full bg-ink md:w-7" aria-hidden="true"></span>
+                <span class="h-1.5 w-5 rounded-full bg-ink md:w-7" aria-hidden="true"></span>
+                <span class="h-1.5 w-5 rounded-full bg-ink/15 md:w-7" aria-hidden="true"></span>
+              </div>
             </div>
           </div>
 
