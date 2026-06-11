@@ -5,20 +5,20 @@
   --font-sans: "Work Sans", "Helvetica Neue", Arial, sans-serif;
   --font-mono: "IBM Plex Mono", "SFMono-Regular", Menlo, monospace;
 
-  --color-paper: #fafafa;
-  --color-paper-dim: #f4f4f5;
-  --color-ink: #09090b;
-  --color-ink-soft: #52525b;
-  --color-ink-faint: #a1a1aa;
-  --color-line: #e4e4e7;
-  --color-accent: #2563eb;
-  --color-accent-light: #60a5fa;
-  --color-accent-soft: #dbeafe;
+  --color-paper: #e2e5e9;
+  --color-paper-dim: #fdfcff;
+  --color-ink: #0a0a0a;
+  --color-ink-soft: #67666a;
+  --color-ink-faint: #b3b2b7;
+  --color-line: #dcdde1;
+  --color-accent: #dd3c64;
+  --color-accent-light: #f0708d;
+  --color-accent-soft: #fbe2e8;
   --color-rust: #e8623a;
-  --color-night: #09090b;
-  --color-night-soft: #18181b;
-  --color-cream: #fafafa;
-  --color-cream-soft: #a1a1aa;
+  --color-night: #0a0a0a;
+  --color-night-soft: #1a1a1a;
+  --color-cream: #fdfdff;
+  --color-cream-soft: #9c9ba0;
 
   --animate-marquee: marquee 38s linear infinite;
   --animate-orbit: orbit 50s linear infinite;
@@ -163,7 +163,7 @@ body {
   transition: color 0.3s ease;
 }
 #site-header.scrolled {
-  background-color: color-mix(in srgb, var(--color-paper) 92%, transparent);
+  background-color: color-mix(in srgb, var(--color-paper-dim) 88%, transparent);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--color-line);
 }
