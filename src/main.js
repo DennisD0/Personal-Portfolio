@@ -53,9 +53,11 @@ mobileMenu.querySelectorAll('a').forEach((link) => {
 // ----- Hero shader background (charcoal clouds + white comets) -----
 // Adapted from "Animated Shader Hero" (shader by Matthias Hurrle, @atzedent),
 // recolored to monochrome and stripped of the unused pointer uniforms.
+// Renders a single static frame for prefers-reduced-motion instead of
+// being skipped entirely, so the background is never just a blank void.
 const heroShaderCanvas = document.getElementById('hero-shader')
 
-if (heroShaderCanvas && !prefersReducedMotion) {
+if (heroShaderCanvas) {
   const gl = heroShaderCanvas.getContext('webgl2')
 
   if (gl) {
@@ -98,6 +100,9 @@ void main(void){
       const shader = gl.createShader(type)
       gl.shaderSource(shader, source)
       gl.compileShader(shader)
+      if (!gl.getShaderParameter(shader, gl.COMPILE_STATUS)) {
+        console.error('Hero shader compile error:', gl.getShaderInfoLog(shader))
+      }
       return shader
     }
 
@@ -125,23 +130,34 @@ void main(void){
       resizeShader()
       window.addEventListener('resize', resizeShader)
 
-      let shaderFrame = null
-      const renderShader = (now) => {
+      const drawFrame = (time) => {
         gl.uniform2f(uResolution, heroShaderCanvas.width, heroShaderCanvas.height)
-        gl.uniform1f(uTime, now * 1e-3)
+        gl.uniform1f(uTime, time)
         gl.drawArrays(gl.TRIANGLE_STRIP, 0, 4)
-        shaderFrame = requestAnimationFrame(renderShader)
       }
 
-      // Only render while the hero is on screen
-      new IntersectionObserver((entries) => {
-        if (entries[0].isIntersecting) {
-          if (shaderFrame === null) shaderFrame = requestAnimationFrame(renderShader)
-        } else if (shaderFrame !== null) {
-          cancelAnimationFrame(shaderFrame)
-          shaderFrame = null
+      if (prefersReducedMotion) {
+        // Draw a single static frame instead of skipping the background entirely
+        drawFrame(0)
+      } else {
+        let shaderFrame = null
+        const renderShader = (now) => {
+          drawFrame(now * 1e-3)
+          shaderFrame = requestAnimationFrame(renderShader)
         }
-      }).observe(heroShaderCanvas)
+
+        // Only render while the hero is on screen
+        new IntersectionObserver((entries) => {
+          if (entries[0].isIntersecting) {
+            if (shaderFrame === null) shaderFrame = requestAnimationFrame(renderShader)
+          } else if (shaderFrame !== null) {
+            cancelAnimationFrame(shaderFrame)
+            shaderFrame = null
+          }
+        }).observe(heroShaderCanvas)
+      }
+    } else {
+      console.error('Hero shader program link error:', gl.getProgramInfoLog(program))
     }
   }
 }
