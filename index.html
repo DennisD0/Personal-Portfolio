@@ -192,7 +192,7 @@
       </section>
 
       <!-- ===== Stats marquee ===== -->
-      <div class="marquee-fade overflow-hidden border-y border-line bg-ink py-3">
+      <div data-reveal class="marquee-fade overflow-hidden border-y border-line bg-ink py-3">
         <div class="flex w-max animate-marquee whitespace-nowrap font-mono text-xs uppercase tracking-[0.3em] text-cream-soft hover:[animation-play-state:paused]">
           <span class="mx-4"><span class="font-semibold text-accent-light">100%</span> NASA Submission Approval</span>
           <span class="mx-4 text-accent-light">/</span>
@@ -261,20 +261,20 @@
                 built, and pitched in 24&ndash;36 hour sprints.
               </p>
 
-              <dl data-reveal style="--reveal-delay:160ms" class="mt-12 grid grid-cols-1 gap-x-8 gap-y-6 border-t border-line pt-8 sm:grid-cols-2">
-                <div>
+              <dl class="mt-12 grid grid-cols-1 gap-x-8 gap-y-6 border-t border-line pt-8 sm:grid-cols-2">
+                <div data-reveal style="--reveal-delay:160ms">
                   <dt class="font-mono text-[11px] uppercase tracking-[0.25em] text-ink-faint">Location</dt>
                   <dd class="mt-2 font-display text-lg">New York, NY</dd>
                 </div>
-                <div>
+                <div data-reveal style="--reveal-delay:220ms">
                   <dt class="font-mono text-[11px] uppercase tracking-[0.25em] text-ink-faint">Currently</dt>
                   <dd class="mt-2 font-display text-lg">Open to Product Design roles</dd>
                 </div>
-                <div>
+                <div data-reveal style="--reveal-delay:280ms">
                   <dt class="font-mono text-[11px] uppercase tracking-[0.25em] text-ink-faint">Education</dt>
                   <dd class="mt-2 font-display text-lg">B.A. Computer Science, CUNY Queens College</dd>
                 </div>
-                <div>
+                <div data-reveal style="--reveal-delay:340ms">
                   <dt class="font-mono text-[11px] uppercase tracking-[0.25em] text-ink-faint">Graduation</dt>
                   <dd class="mt-2 font-display text-lg">Summer 2026</dd>
                 </div>
@@ -470,7 +470,7 @@
               target="_blank"
               rel="noopener noreferrer"
               data-reveal
-              style="--reveal-delay:100ms"
+              style="--reveal-delay:120ms"
               class="group relative flex flex-col justify-between overflow-hidden border border-line bg-paper p-8 transition-colors duration-300 hover:border-accent md:p-10 cursor-pointer"
             >
               <div>
@@ -506,6 +506,7 @@
               target="_blank"
               rel="noopener noreferrer"
               data-reveal
+              style="--reveal-delay:240ms"
               class="group relative flex flex-col justify-between overflow-hidden border border-line bg-paper p-8 transition-colors duration-300 hover:border-accent md:p-10 cursor-pointer"
             >
               <div>
@@ -542,7 +543,7 @@
               target="_blank"
               rel="noopener noreferrer"
               data-reveal
-              style="--reveal-delay:100ms"
+              style="--reveal-delay:360ms"
               class="group relative flex flex-col justify-between overflow-hidden border border-line bg-paper p-8 transition-colors duration-300 hover:border-accent md:p-10 cursor-pointer"
             >
               <div>
@@ -719,10 +720,12 @@
             programs, or accessible design. The fastest way to reach me is email.
           </p>
 
-          <div data-reveal style="--reveal-delay:180ms" class="mt-12 flex flex-col gap-4 sm:flex-row sm:items-center">
+          <div class="mt-12 flex flex-col gap-4 sm:flex-row sm:items-center">
             <button
               id="copy-email"
               type="button"
+              data-reveal
+              style="--reveal-delay:180ms"
               class="group relative inline-flex items-center gap-3 border border-ink px-6 py-4 font-mono text-sm uppercase tracking-[0.15em] transition-colors hover:bg-ink hover:text-cream cursor-pointer sm:text-base"
               data-email="dennisnasa@gmail.com"
             >
@@ -738,6 +741,8 @@
               href="https://linkedin.com/in/dennis-do-coding"
               target="_blank"
               rel="noopener noreferrer"
+              data-reveal
+              style="--reveal-delay:240ms"
               class="group inline-flex items-center gap-3 border border-line px-6 py-4 font-mono text-sm uppercase tracking-[0.15em] text-ink-soft transition-colors hover:border-accent hover:text-accent cursor-pointer sm:text-base"
             >
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-4 w-4" aria-hidden="true">
@@ -749,6 +754,8 @@
             <a
               href="/dennis-do-resume.pdf"
               download
+              data-reveal
+              style="--reveal-delay:300ms"
               class="group inline-flex items-center gap-3 border border-line px-6 py-4 font-mono text-sm uppercase tracking-[0.15em] text-ink-soft transition-colors hover:border-accent hover:text-accent cursor-pointer sm:text-base"
             >
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" aria-hidden="true">
@@ -765,7 +772,7 @@
 
     <!-- ===== Footer ===== -->
     <footer class="border-t border-line px-6 py-8 md:px-10">
-      <div class="mx-auto flex max-w-7xl flex-col gap-4 font-mono text-[11px] uppercase tracking-[0.2em] text-ink-faint sm:flex-row sm:items-center sm:justify-between">
+      <div data-reveal class="mx-auto flex max-w-7xl flex-col gap-4 font-mono text-[11px] uppercase tracking-[0.2em] text-ink-faint sm:flex-row sm:items-center sm:justify-between">
         <p>&copy; <span id="year"></span> Dennis Do. Designed &amp; built in New York.</p>
         <a href="#home" class="link-underline inline-flex items-center gap-2 text-ink-soft transition-colors hover:text-accent cursor-pointer">
           Back to top
