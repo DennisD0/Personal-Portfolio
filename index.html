@@ -4,14 +4,14 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#121211" />
+    <meta name="theme-color" content="#fafafa" />
     <meta name="description" content="Dennis (Gyeonghwan) Do — Product Designer and Computer Science student at CUNY Queens College. Bridging product design and hands-on engineering." />
     <title>Dennis Do — Product Designer &amp; Builder</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Work+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
   </head>
@@ -119,77 +119,76 @@
 
     <main id="main">
       <!-- ===== Hero ===== -->
-      <section id="home" class="relative isolate flex min-h-screen flex-col justify-between overflow-hidden bg-night text-cream bg-grain">
-        <div class="bg-dot-grid pointer-events-none absolute inset-0" aria-hidden="true"></div>
-        <div class="pointer-events-none absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-night/90" aria-hidden="true"></div>
-
+      <section id="home" class="relative isolate flex min-h-screen flex-col items-center justify-center overflow-hidden bg-paper text-ink bg-grain px-6 pt-32 pb-24 text-center md:px-10">
         <!-- Orbit illustration -->
-        <div class="pointer-events-none absolute -right-24 top-1/2 hidden h-[34rem] w-[34rem] -translate-y-1/2 text-accent-light/40 lg:block xl:-right-12" aria-hidden="true">
+        <div class="pointer-events-none absolute left-1/2 top-1/2 hidden h-[40rem] w-[40rem] -translate-x-1/2 -translate-y-1/2 text-accent-soft lg:block" aria-hidden="true">
           <svg viewBox="0 0 400 400" class="h-full w-full" fill="none">
-            <circle cx="200" cy="200" r="190" stroke="currentColor" stroke-opacity="0.18" />
-            <circle cx="200" cy="200" r="135" stroke="currentColor" stroke-opacity="0.25" />
-            <circle cx="200" cy="200" r="80" stroke="currentColor" stroke-opacity="0.35" />
-            <g class="orbit-spin">
+            <circle cx="200" cy="200" r="190" stroke="currentColor" stroke-opacity="0.7" />
+            <circle cx="200" cy="200" r="135" stroke="currentColor" stroke-opacity="0.9" />
+            <circle cx="200" cy="200" r="80" stroke="currentColor" />
+            <g class="orbit-spin text-accent-light">
               <circle cx="200" cy="10" r="5" fill="currentColor" />
             </g>
-            <g class="orbit-spin-rev">
+            <g class="orbit-spin-rev text-accent-light">
               <circle cx="200" cy="65" r="3.5" fill="currentColor" />
             </g>
-            <g class="orbit-spin">
+            <g class="orbit-spin text-accent-light">
               <circle cx="390" cy="200" r="3" fill="currentColor" />
             </g>
-            <circle cx="200" cy="200" r="3" fill="currentColor" />
+            <circle cx="200" cy="200" r="3" fill="currentColor" class="text-accent" />
           </svg>
         </div>
 
-        <div class="relative z-10 mx-auto flex w-full max-w-7xl flex-1 flex-col justify-center px-6 pt-32 pb-16 md:px-10">
-          <p data-reveal class="mb-6 font-mono text-xs uppercase tracking-[0.3em] text-cream-soft">
+        <div class="relative z-10 mx-auto flex w-full max-w-4xl flex-col items-center">
+          <p data-reveal class="font-mono text-xs uppercase tracking-[0.3em] text-ink-faint">
             New York, NY &mdash; 40.73&deg; N / 73.79&deg; W
           </p>
 
-          <h1 data-reveal style="--reveal-delay:80ms" class="font-display text-[clamp(3rem,11vw,8.5rem)] leading-[0.95] font-light tracking-tight">
+          <h1 data-reveal style="--reveal-delay:80ms" class="mt-6 font-display text-[clamp(3rem,12vw,9rem)] leading-[0.95] font-semibold tracking-tight">
             Dennis<br />
             Do
           </h1>
 
-          <div data-reveal style="--reveal-delay:160ms" class="mt-8 flex flex-wrap items-center gap-3 font-mono text-sm uppercase tracking-[0.25em] text-cream-soft md:text-base">
+          <div data-reveal style="--reveal-delay:160ms" class="mt-8 flex flex-wrap items-center justify-center gap-3 font-mono text-sm uppercase tracking-[0.25em] text-ink-soft md:text-base">
             <span>Currently building as a</span>
             <span class="relative inline-flex h-[1.6em] min-w-[206px] overflow-hidden align-bottom md:min-w-[235px]">
-              <span id="role-rotator" class="absolute inset-0 flex items-center text-accent-light"></span>
+              <span id="role-rotator" class="absolute inset-0 flex items-center justify-center text-accent"></span>
             </span>
           </div>
 
-          <p data-reveal style="--reveal-delay:240ms" class="mt-8 max-w-xl font-sans text-base leading-relaxed text-cream-soft md:text-lg">
+          <p data-reveal style="--reveal-delay:240ms" class="mt-8 max-w-xl font-sans text-base leading-relaxed text-ink-soft md:text-lg">
             CS student at CUNY Queens College who moves fluidly between product
             design and shipped code &mdash; most recently designing product at
-            <span class="text-cream">Scout</span>, after leading cross-university
-            teams at <span class="text-cream">NASA L&rsquo;SPACE</span>.
+            <span class="font-medium text-ink">Scout</span>, after leading cross-university
+            teams at <span class="font-medium text-ink">NASA L&rsquo;SPACE</span>.
           </p>
 
-          <div data-reveal style="--reveal-delay:320ms" class="mt-12 flex flex-wrap items-center gap-4">
-            <a href="#projects" class="inline-flex items-center gap-2 rounded-full bg-accent px-6 py-3 font-mono text-xs uppercase tracking-[0.2em] text-cream transition-colors hover:bg-accent-light hover:text-night cursor-pointer">
+          <div data-reveal style="--reveal-delay:320ms" class="mt-12 flex flex-wrap items-center justify-center gap-4">
+            <a href="#projects" class="inline-flex items-center gap-2 rounded-full bg-accent px-6 py-3 font-mono text-xs uppercase tracking-[0.2em] text-cream transition-colors hover:bg-ink cursor-pointer">
               View My Work
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-3.5 w-3.5" aria-hidden="true">
                 <path d="M7 17 17 7" />
                 <path d="M7 7h10v10" />
               </svg>
             </a>
-            <a href="#contact" class="link-underline inline-flex items-center gap-2 px-2 py-3 font-mono text-xs uppercase tracking-[0.2em] text-cream transition-colors cursor-pointer">
+            <a href="#contact" class="link-underline inline-flex items-center gap-2 px-2 py-3 font-mono text-xs uppercase tracking-[0.2em] text-ink transition-colors cursor-pointer">
               Get In Touch
             </a>
           </div>
         </div>
 
-        <div data-reveal style="--reveal-delay:400ms" class="relative z-10 mx-auto flex w-full max-w-7xl items-center justify-between px-6 pb-8 font-mono text-[11px] uppercase tracking-[0.25em] text-cream-soft md:px-10">
-          <span>B.A. Computer Science &mdash; CUNY Queens College</span>
-          <span class="hidden sm:inline">Expected Grad. Summer 2026</span>
-          <a href="#about" class="group inline-flex items-center gap-2 transition-colors hover:text-cream cursor-pointer" aria-label="Scroll to About section">
-            Scroll
-            <span class="relative h-8 w-px overflow-hidden bg-cream-soft/30">
-              <span class="absolute inset-x-0 top-0 h-1/2 w-full animate-bounce bg-accent-light"></span>
-            </span>
-          </a>
-        </div>
+        <a
+          data-reveal
+          style="--reveal-delay:400ms"
+          href="#about"
+          class="group absolute bottom-8 left-1/2 z-10 inline-flex -translate-x-1/2 flex-col items-center gap-3 font-mono text-[11px] uppercase tracking-[0.25em] text-ink-faint transition-colors hover:text-ink cursor-pointer"
+          aria-label="Scroll to About section"
+        >
+          Scroll
+          <span class="relative h-8 w-px overflow-hidden bg-line">
+            <span class="absolute inset-x-0 top-0 h-1/2 w-full animate-bounce bg-accent"></span>
+          </span>
+        </a>
       </section>
 
       <!-- ===== Stats marquee ===== -->

@@ -1,24 +1,24 @@
 @import "tailwindcss";
 
 @theme {
-  --font-display: "Fraunces", "Iowan Old Style", Georgia, serif;
-  --font-sans: "IBM Plex Sans", "Helvetica Neue", Arial, sans-serif;
+  --font-display: "Outfit", "Helvetica Neue", Arial, sans-serif;
+  --font-sans: "Work Sans", "Helvetica Neue", Arial, sans-serif;
   --font-mono: "IBM Plex Mono", "SFMono-Regular", Menlo, monospace;
 
-  --color-paper: #faf9f4;
-  --color-paper-dim: #f1ece2;
-  --color-ink: #18181a;
-  --color-ink-soft: #5c574f;
-  --color-ink-faint: #9c968a;
-  --color-line: #e4ded2;
-  --color-accent: #2f5dff;
-  --color-accent-light: #7c9bff;
-  --color-accent-soft: #e8edff;
+  --color-paper: #fafafa;
+  --color-paper-dim: #f4f4f5;
+  --color-ink: #09090b;
+  --color-ink-soft: #52525b;
+  --color-ink-faint: #a1a1aa;
+  --color-line: #e4e4e7;
+  --color-accent: #2563eb;
+  --color-accent-light: #60a5fa;
+  --color-accent-soft: #dbeafe;
   --color-rust: #e8623a;
-  --color-night: #121211;
-  --color-night-soft: #1d1d1b;
-  --color-cream: #f4f1e9;
-  --color-cream-soft: #a8a299;
+  --color-night: #09090b;
+  --color-night-soft: #18181b;
+  --color-cream: #fafafa;
+  --color-cream-soft: #a1a1aa;
 
   --animate-marquee: marquee 38s linear infinite;
   --animate-orbit: orbit 50s linear infinite;
@@ -49,12 +49,6 @@ body {
   color: var(--color-ink);
   font-family: var(--font-sans);
   font-feature-settings: "ss01" on, "ss02" on;
-}
-
-/* Use Fraunces' display optical size everywhere it's used as a heading font,
-   so small headings don't pick up the swashy "text" cut (e.g. the looped f). */
-.font-display {
-  font-variation-settings: "opsz" 144;
 }
 
 ::selection {
@@ -161,11 +155,11 @@ body {
 
 /* Header */
 #site-header .header-text {
-  color: var(--color-cream);
+  color: var(--color-ink);
   transition: color 0.3s ease;
 }
 #site-header .header-muted {
-  color: var(--color-cream-soft);
+  color: var(--color-ink-faint);
   transition: color 0.3s ease;
 }
 #site-header.scrolled {
@@ -175,12 +169,6 @@ body {
 }
 #site-header:not(.scrolled) {
   border-bottom: 1px solid transparent;
-}
-#site-header.scrolled .header-text {
-  color: var(--color-ink);
-}
-#site-header.scrolled .header-muted {
-  color: var(--color-ink-faint);
 }
 #site-header nav a.active.header-text,
 #site-header nav a.active .header-muted {
