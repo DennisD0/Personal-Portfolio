@@ -319,10 +319,22 @@
             </p>
           </div>
 
-          <div class="relative space-y-16 border-l border-line pl-8 md:space-y-24 md:pl-14">
+          <div id="experience-timeline" class="relative space-y-16 pl-8 md:space-y-24 md:pl-14">
+            <svg class="pointer-events-none absolute top-0 left-0 h-full w-6 -translate-x-1/2 overflow-visible" viewBox="0 0 24 110" preserveAspectRatio="none" aria-hidden="true">
+              <defs>
+                <linearGradient id="timeline-fade" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0%" stop-color="var(--color-accent)" />
+                  <stop offset="85%" stop-color="var(--color-accent)" />
+                  <stop offset="100%" stop-color="var(--color-accent)" stop-opacity="0" />
+                </linearGradient>
+              </defs>
+              <path d="M12,0 C20,8 20,12 12,20 C4,28 4,32 12,40 C20,48 20,52 12,60 C4,68 4,72 12,80 C20,88 20,92 12,100 C4,105 4,108 12,110" fill="none" stroke="var(--color-line)" stroke-width="1.5" vector-effect="non-scaling-stroke" />
+              <path id="timeline-glow-path" d="M12,0 C20,8 20,12 12,20 C4,28 4,32 12,40 C20,48 20,52 12,60 C4,68 4,72 12,80 C20,88 20,92 12,100 C4,105 4,108 12,110" fill="none" stroke="url(#timeline-fade)" stroke-width="2" stroke-linecap="round" vector-effect="non-scaling-stroke" style="stroke-dasharray: 300; stroke-dashoffset: 300" />
+            </svg>
+
             <!-- 413 Youth Club -->
             <article data-reveal class="relative">
-              <span class="absolute top-1.5 -left-[38.5px] h-3 w-3 rounded-full border-2 border-accent bg-paper-dim md:-left-[62.5px]" aria-hidden="true"></span>
+              <span class="timeline-marker absolute top-1.5 -left-[38.5px] h-3 w-3 rounded-full border-2 border-line bg-paper-dim md:-left-[62.5px]" aria-hidden="true"></span>
               <div class="grid gap-3 md:grid-cols-[14rem_1fr] md:gap-12">
                 <div class="font-mono text-xs uppercase tracking-[0.2em] text-ink-faint">
                   <p>Jun 2026</p>
@@ -345,7 +357,7 @@
 
             <!-- En Hakkore -->
             <article data-reveal class="relative">
-              <span class="absolute top-1.5 -left-[38.5px] h-3 w-3 rounded-full border-2 border-accent bg-paper-dim md:-left-[62.5px]" aria-hidden="true"></span>
+              <span class="timeline-marker absolute top-1.5 -left-[38.5px] h-3 w-3 rounded-full border-2 border-line bg-paper-dim md:-left-[62.5px]" aria-hidden="true"></span>
               <div class="grid gap-3 md:grid-cols-[14rem_1fr] md:gap-12">
                 <div class="font-mono text-xs uppercase tracking-[0.2em] text-ink-faint">
                   <p>May 2026</p>
@@ -367,7 +379,7 @@
 
             <!-- Scout -->
             <article data-reveal class="relative">
-              <span class="absolute top-1.5 -left-[38.5px] h-3 w-3 rounded-full border-2 border-accent bg-paper-dim md:-left-[62.5px]" aria-hidden="true"></span>
+              <span class="timeline-marker absolute top-1.5 -left-[38.5px] h-3 w-3 rounded-full border-2 border-line bg-paper-dim md:-left-[62.5px]" aria-hidden="true"></span>
               <div class="grid gap-3 md:grid-cols-[14rem_1fr] md:gap-12">
                 <div class="font-mono text-xs uppercase tracking-[0.2em] text-ink-faint">
                   <p>Oct 2025 &mdash; Feb 2026</p>
@@ -389,7 +401,7 @@
 
             <!-- NASA L'SPACE -->
             <article data-reveal class="relative">
-              <span class="absolute top-1.5 -left-[38.5px] h-3 w-3 rounded-full border-2 border-accent bg-paper-dim md:-left-[62.5px]" aria-hidden="true"></span>
+              <span class="timeline-marker absolute top-1.5 -left-[38.5px] h-3 w-3 rounded-full border-2 border-line bg-paper-dim md:-left-[62.5px]" aria-hidden="true"></span>
               <div class="grid gap-3 md:grid-cols-[14rem_1fr] md:gap-12">
                 <div class="font-mono text-xs uppercase tracking-[0.2em] text-ink-faint">
                   <p>May 2025 &mdash; Sep 2025</p>
@@ -411,7 +423,7 @@
 
             <!-- Research Foundation of CUNY -->
             <article data-reveal class="relative">
-              <span class="absolute top-1.5 -left-[38.5px] h-3 w-3 rounded-full border-2 border-accent bg-paper-dim md:-left-[62.5px]" aria-hidden="true"></span>
+              <span class="timeline-marker absolute top-1.5 -left-[38.5px] h-3 w-3 rounded-full border-2 border-line bg-paper-dim md:-left-[62.5px]" aria-hidden="true"></span>
               <div class="grid gap-3 md:grid-cols-[14rem_1fr] md:gap-12">
                 <div class="font-mono text-xs uppercase tracking-[0.2em] text-ink-faint">
                   <p>Jul 2023 &mdash; Sep 2023</p>
