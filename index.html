@@ -192,42 +192,38 @@
         </div>
       </section>
 
-      <!-- ===== Marquee strip ===== -->
-      <div class="overflow-hidden border-y border-line bg-ink py-3">
-        <div class="flex w-max animate-marquee whitespace-nowrap font-mono text-xs uppercase tracking-[0.3em] text-cream-soft">
-          <span class="mx-4">Product Strategy</span>
-          <span class="mx-4 text-accent-light">&middot;</span>
-          <span class="mx-4">Agile / Scrum</span>
-          <span class="mx-4 text-accent-light">&middot;</span>
-          <span class="mx-4">Roadmap Prioritization</span>
-          <span class="mx-4 text-accent-light">&middot;</span>
-          <span class="mx-4">Figma</span>
-          <span class="mx-4 text-accent-light">&middot;</span>
-          <span class="mx-4">JavaScript</span>
-          <span class="mx-4 text-accent-light">&middot;</span>
-          <span class="mx-4">Firebase</span>
-          <span class="mx-4 text-accent-light">&middot;</span>
-          <span class="mx-4">Stakeholder Management</span>
-          <span class="mx-4 text-accent-light">&middot;</span>
-          <span class="mx-4">Unity &amp; C++</span>
-          <span class="mx-4 text-accent-light">&middot;</span>
+      <!-- ===== Stats marquee ===== -->
+      <div class="marquee-fade overflow-hidden border-y border-line bg-ink py-3">
+        <div class="flex w-max animate-marquee whitespace-nowrap font-mono text-xs uppercase tracking-[0.3em] text-cream-soft hover:[animation-play-state:paused]">
+          <span class="mx-4"><span class="font-semibold text-accent-light">100%</span> NASA Submission Approval</span>
+          <span class="mx-4 text-accent-light">/</span>
+          <span class="mx-4"><span class="font-semibold text-accent-light">20+</span> Figma Flows Shipped</span>
+          <span class="mx-4 text-accent-light">/</span>
+          <span class="mx-4"><span class="font-semibold text-accent-light">91%</span> Cost Reduction Identified</span>
+          <span class="mx-4 text-accent-light">/</span>
+          <span class="mx-4"><span class="font-semibold text-accent-light">8-Member</span> Team Led</span>
+          <span class="mx-4 text-accent-light">/</span>
+          <span class="mx-4"><span class="font-semibold text-accent-light">2,000+</span> Hackathon Reach</span>
+          <span class="mx-4 text-accent-light">/</span>
+          <span class="mx-4"><span class="font-semibold text-accent-light">80%</span> Client Retention</span>
+          <span class="mx-4 text-accent-light">/</span>
+          <span class="mx-4"><span class="font-semibold text-accent-light">5</span> Products Shipped</span>
+          <span class="mx-4 text-accent-light">/</span>
           <!-- duplicate for seamless loop -->
-          <span class="mx-4">Product Strategy</span>
-          <span class="mx-4 text-accent-light">&middot;</span>
-          <span class="mx-4">Agile / Scrum</span>
-          <span class="mx-4 text-accent-light">&middot;</span>
-          <span class="mx-4">Roadmap Prioritization</span>
-          <span class="mx-4 text-accent-light">&middot;</span>
-          <span class="mx-4">Figma</span>
-          <span class="mx-4 text-accent-light">&middot;</span>
-          <span class="mx-4">JavaScript</span>
-          <span class="mx-4 text-accent-light">&middot;</span>
-          <span class="mx-4">Firebase</span>
-          <span class="mx-4 text-accent-light">&middot;</span>
-          <span class="mx-4">Stakeholder Management</span>
-          <span class="mx-4 text-accent-light">&middot;</span>
-          <span class="mx-4">Unity &amp; C++</span>
-          <span class="mx-4 text-accent-light">&middot;</span>
+          <span class="mx-4"><span class="font-semibold text-accent-light">100%</span> NASA Submission Approval</span>
+          <span class="mx-4 text-accent-light">/</span>
+          <span class="mx-4"><span class="font-semibold text-accent-light">20+</span> Figma Flows Shipped</span>
+          <span class="mx-4 text-accent-light">/</span>
+          <span class="mx-4"><span class="font-semibold text-accent-light">91%</span> Cost Reduction Identified</span>
+          <span class="mx-4 text-accent-light">/</span>
+          <span class="mx-4"><span class="font-semibold text-accent-light">8-Member</span> Team Led</span>
+          <span class="mx-4 text-accent-light">/</span>
+          <span class="mx-4"><span class="font-semibold text-accent-light">2,000+</span> Hackathon Reach</span>
+          <span class="mx-4 text-accent-light">/</span>
+          <span class="mx-4"><span class="font-semibold text-accent-light">80%</span> Client Retention</span>
+          <span class="mx-4 text-accent-light">/</span>
+          <span class="mx-4"><span class="font-semibold text-accent-light">5</span> Products Shipped</span>
+          <span class="mx-4 text-accent-light">/</span>
         </div>
       </div>
 
@@ -591,8 +587,94 @@
             </h2>
           </div>
 
-          <div class="grid gap-12 md:grid-cols-2 md:gap-8">
-            <div data-reveal class="border-t border-white/10 pt-8">
+          <!-- Numbered capability list -->
+          <div class="border-t border-white/10">
+            <div data-reveal style="--reveal-delay:0ms" class="group skill-row flex items-center justify-between gap-6 border-b border-white/10 py-6 transition-colors duration-300 md:py-7">
+              <div class="flex items-baseline gap-5 md:gap-10">
+                <span class="font-mono text-xs text-cream-soft transition-colors duration-300 group-hover:text-accent-light md:text-sm">01</span>
+                <span class="font-display text-2xl transition-colors duration-300 group-hover:text-accent-light md:text-4xl">Product Strategy</span>
+              </div>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5 shrink-0 text-cream-soft transition-all duration-300 group-hover:translate-x-2 group-hover:text-accent-light md:h-6 md:w-6" aria-hidden="true">
+                <path d="M5 12h14" />
+                <path d="m12 5 7 7-7 7" />
+              </svg>
+            </div>
+            <div data-reveal style="--reveal-delay:40ms" class="group skill-row flex items-center justify-between gap-6 border-b border-white/10 py-6 transition-colors duration-300 md:py-7">
+              <div class="flex items-baseline gap-5 md:gap-10">
+                <span class="font-mono text-xs text-cream-soft transition-colors duration-300 group-hover:text-accent-light md:text-sm">02</span>
+                <span class="font-display text-2xl transition-colors duration-300 group-hover:text-accent-light md:text-4xl">UX/UI Design</span>
+              </div>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5 shrink-0 text-cream-soft transition-all duration-300 group-hover:translate-x-2 group-hover:text-accent-light md:h-6 md:w-6" aria-hidden="true">
+                <path d="M5 12h14" />
+                <path d="m12 5 7 7-7 7" />
+              </svg>
+            </div>
+            <div data-reveal style="--reveal-delay:80ms" class="group skill-row flex items-center justify-between gap-6 border-b border-white/10 py-6 transition-colors duration-300 md:py-7">
+              <div class="flex items-baseline gap-5 md:gap-10">
+                <span class="font-mono text-xs text-cream-soft transition-colors duration-300 group-hover:text-accent-light md:text-sm">03</span>
+                <span class="font-display text-2xl transition-colors duration-300 group-hover:text-accent-light md:text-4xl">Roadmapping</span>
+              </div>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5 shrink-0 text-cream-soft transition-all duration-300 group-hover:translate-x-2 group-hover:text-accent-light md:h-6 md:w-6" aria-hidden="true">
+                <path d="M5 12h14" />
+                <path d="m12 5 7 7-7 7" />
+              </svg>
+            </div>
+            <div data-reveal style="--reveal-delay:120ms" class="group skill-row flex items-center justify-between gap-6 border-b border-white/10 py-6 transition-colors duration-300 md:py-7">
+              <div class="flex items-baseline gap-5 md:gap-10">
+                <span class="font-mono text-xs text-cream-soft transition-colors duration-300 group-hover:text-accent-light md:text-sm">04</span>
+                <span class="font-display text-2xl transition-colors duration-300 group-hover:text-accent-light md:text-4xl">Agile &amp; Scrum</span>
+              </div>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5 shrink-0 text-cream-soft transition-all duration-300 group-hover:translate-x-2 group-hover:text-accent-light md:h-6 md:w-6" aria-hidden="true">
+                <path d="M5 12h14" />
+                <path d="m12 5 7 7-7 7" />
+              </svg>
+            </div>
+            <div data-reveal style="--reveal-delay:160ms" class="group skill-row flex items-center justify-between gap-6 border-b border-white/10 py-6 transition-colors duration-300 md:py-7">
+              <div class="flex items-baseline gap-5 md:gap-10">
+                <span class="font-mono text-xs text-cream-soft transition-colors duration-300 group-hover:text-accent-light md:text-sm">05</span>
+                <span class="font-display text-2xl transition-colors duration-300 group-hover:text-accent-light md:text-4xl">Stakeholder Comms</span>
+              </div>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5 shrink-0 text-cream-soft transition-all duration-300 group-hover:translate-x-2 group-hover:text-accent-light md:h-6 md:w-6" aria-hidden="true">
+                <path d="M5 12h14" />
+                <path d="m12 5 7 7-7 7" />
+              </svg>
+            </div>
+            <div data-reveal style="--reveal-delay:200ms" class="group skill-row flex items-center justify-between gap-6 border-b border-white/10 py-6 transition-colors duration-300 md:py-7">
+              <div class="flex items-baseline gap-5 md:gap-10">
+                <span class="font-mono text-xs text-cream-soft transition-colors duration-300 group-hover:text-accent-light md:text-sm">06</span>
+                <span class="font-display text-2xl transition-colors duration-300 group-hover:text-accent-light md:text-4xl">Front-End Dev</span>
+              </div>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5 shrink-0 text-cream-soft transition-all duration-300 group-hover:translate-x-2 group-hover:text-accent-light md:h-6 md:w-6" aria-hidden="true">
+                <path d="M5 12h14" />
+                <path d="m12 5 7 7-7 7" />
+              </svg>
+            </div>
+            <div data-reveal style="--reveal-delay:240ms" class="group skill-row flex items-center justify-between gap-6 border-b border-white/10 py-6 transition-colors duration-300 md:py-7">
+              <div class="flex items-baseline gap-5 md:gap-10">
+                <span class="font-mono text-xs text-cream-soft transition-colors duration-300 group-hover:text-accent-light md:text-sm">07</span>
+                <span class="font-display text-2xl transition-colors duration-300 group-hover:text-accent-light md:text-4xl">Prototyping</span>
+              </div>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5 shrink-0 text-cream-soft transition-all duration-300 group-hover:translate-x-2 group-hover:text-accent-light md:h-6 md:w-6" aria-hidden="true">
+                <path d="M5 12h14" />
+                <path d="m12 5 7 7-7 7" />
+              </svg>
+            </div>
+            <div data-reveal style="--reveal-delay:280ms" class="group skill-row flex items-center justify-between gap-6 border-b border-white/10 py-6 transition-colors duration-300 md:py-7">
+              <div class="flex items-baseline gap-5 md:gap-10">
+                <span class="font-mono text-xs text-cream-soft transition-colors duration-300 group-hover:text-accent-light md:text-sm">08</span>
+                <span class="font-display text-2xl transition-colors duration-300 group-hover:text-accent-light md:text-4xl">Team Leadership</span>
+              </div>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5 shrink-0 text-cream-soft transition-all duration-300 group-hover:translate-x-2 group-hover:text-accent-light md:h-6 md:w-6" aria-hidden="true">
+                <path d="M5 12h14" />
+                <path d="m12 5 7 7-7 7" />
+              </svg>
+            </div>
+          </div>
+
+          <p data-reveal style="--reveal-delay:100ms" class="mt-16 font-mono text-xs uppercase tracking-[0.3em] text-cream-soft">Tools &amp; Technologies</p>
+
+          <div class="mt-8 grid gap-12 md:grid-cols-2 md:gap-8">
+            <div data-reveal>
               <h3 class="font-mono text-xs uppercase tracking-[0.3em] text-accent-light">Product</h3>
               <ul class="mt-6 flex flex-wrap gap-3">
                 <li class="rounded-full border border-white/15 px-4 py-2 font-sans text-sm text-cream-soft">Requirements Definition</li>
@@ -607,7 +689,7 @@
               </ul>
             </div>
 
-            <div data-reveal style="--reveal-delay:100ms" class="border-t border-white/10 pt-8">
+            <div data-reveal style="--reveal-delay:100ms">
               <h3 class="font-mono text-xs uppercase tracking-[0.3em] text-accent-light">Technical</h3>
               <ul class="mt-6 flex flex-wrap gap-3">
                 <li class="rounded-full border border-white/15 px-4 py-2 font-sans text-sm text-cream-soft">Figma</li>
