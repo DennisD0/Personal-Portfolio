@@ -162,16 +162,16 @@ body {
 
 /* Experience timeline flow line */
 #timeline-glow-path {
-  filter: drop-shadow(0 0 3px var(--color-accent)) drop-shadow(0 0 10px color-mix(in srgb, var(--color-accent) 55%, transparent));
+  filter: drop-shadow(0 0 2px var(--color-ink)) drop-shadow(0 0 8px color-mix(in srgb, var(--color-ink) 55%, transparent));
   transition: stroke-dashoffset 0.15s linear;
 }
 .timeline-marker {
   transition: background-color 0.4s ease, border-color 0.4s ease, box-shadow 0.4s ease;
 }
 .timeline-marker.is-active {
-  border-color: var(--color-accent);
-  background-color: var(--color-accent);
-  box-shadow: 0 0 0 4px color-mix(in srgb, var(--color-accent) 18%, transparent), 0 0 16px color-mix(in srgb, var(--color-accent) 70%, transparent);
+  border-color: var(--color-ink);
+  background-color: var(--color-ink);
+  box-shadow: 0 0 0 4px color-mix(in srgb, var(--color-ink) 14%, transparent), 0 0 14px color-mix(in srgb, var(--color-ink) 60%, transparent);
 }
 
 /* Mobile menu */
