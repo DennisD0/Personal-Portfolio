@@ -90,17 +90,23 @@ const sectionObserver = new IntersectionObserver(
 
 sections.forEach((section) => sectionObserver.observe(section))
 
-// ----- Experience timeline markers -----
+// ----- Experience timeline flow animation -----
 const timeline = document.getElementById('experience-timeline')
+const timelineProgress = document.getElementById('timeline-progress')
 const timelineMarkers = document.querySelectorAll('.timeline-marker')
 
-if (timeline && timelineMarkers.length) {
+if (timeline && timelineProgress) {
   if (prefersReducedMotion) {
+    timelineProgress.style.height = '100%'
     timelineMarkers.forEach((marker) => marker.classList.add('is-active'))
   } else {
     let ticking = false
     const updateTimeline = () => {
+      const rect = timeline.getBoundingClientRect()
       const ref = window.innerHeight * 0.65
+      const progress = Math.min(Math.max((ref - rect.top) / rect.height, 0), 1)
+
+      timelineProgress.style.height = `${progress * 100}%`
 
       timelineMarkers.forEach((marker) => {
         const markerRect = marker.getBoundingClientRect()
