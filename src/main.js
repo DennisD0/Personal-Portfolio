@@ -41,39 +41,6 @@ mobileMenu.querySelectorAll('a').forEach((link) => {
   link.addEventListener('click', () => setMenu(false))
 })
 
-// ----- Role rotator -----
-const roles = ['Product Designer', 'Project Manager', 'Software Engineer', 'Builder']
-const rotator = document.getElementById('role-rotator')
-
-if (rotator) {
-  rotator.textContent = roles[0]
-
-  if (!prefersReducedMotion) {
-    let index = 0
-    rotator.style.transition = 'transform 0.5s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.4s ease'
-
-    setInterval(() => {
-      index = (index + 1) % roles.length
-      rotator.style.transform = 'translateY(-110%)'
-      rotator.style.opacity = '0'
-
-      setTimeout(() => {
-        rotator.textContent = roles[index]
-        rotator.style.transition = 'none'
-        rotator.style.transform = 'translateY(110%)'
-
-        requestAnimationFrame(() => {
-          requestAnimationFrame(() => {
-            rotator.style.transition = 'transform 0.5s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.4s ease'
-            rotator.style.transform = 'translateY(0)'
-            rotator.style.opacity = '1'
-          })
-        })
-      }, 420)
-    }, 2800)
-  }
-}
-
 // ----- Scroll reveal -----
 const revealEls = document.querySelectorAll('[data-reveal]')
 

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#fdfcff" />
+    <meta name="theme-color" content="#050505" />
     <meta name="description" content="Dennis (Gyeonghwan) Do — Product Designer and Computer Science student at CUNY Queens College. Bridging product design and hands-on engineering." />
     <title>Dennis Do — Product Designer &amp; Builder</title>
 
@@ -119,27 +119,13 @@
 
     <main id="main">
       <!-- ===== Hero ===== -->
-      <section id="home" class="relative isolate flex min-h-screen flex-col items-center justify-center overflow-hidden bg-paper-dim text-ink bg-grain px-6 pt-32 pb-24 text-center md:px-10">
-        <!-- Ambient gradient wash -->
-        <div class="pointer-events-none absolute inset-0 bg-linear-to-br from-accent-soft/50 via-transparent to-accent-light/15 blur-3xl" aria-hidden="true"></div>
+      <section id="home" class="relative isolate flex min-h-screen flex-col items-center justify-center overflow-hidden bg-paper text-ink bg-grain px-6 pt-32 pb-24 text-center md:px-10">
+        <!-- Ambient glow -->
+        <div class="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_50%_42%,_color-mix(in_srgb,var(--color-ink)_7%,transparent),_transparent_60%)]" aria-hidden="true"></div>
 
-        <!-- Floating shapes -->
-        <div class="pointer-events-none absolute inset-0 overflow-hidden" aria-hidden="true">
-          <div class="hero-shape hero-shape--1 absolute left-[-10%] top-[15%] h-[140px] w-[600px] md:left-[-5%] md:top-[20%]">
-            <div class="hero-shape__pill"></div>
-          </div>
-          <div class="hero-shape hero-shape--2 absolute right-[-5%] top-[68%] h-[120px] w-[500px] md:right-0 md:top-[72%]">
-            <div class="hero-shape__pill"></div>
-          </div>
-          <div class="hero-shape hero-shape--3 absolute left-[5%] bottom-[6%] h-[80px] w-[300px] md:left-[10%] md:bottom-[10%]">
-            <div class="hero-shape__pill"></div>
-          </div>
-          <div class="hero-shape hero-shape--4 absolute right-[12%] top-[8%] hidden h-[60px] w-[200px] sm:block md:right-[18%] md:top-[14%]">
-            <div class="hero-shape__pill"></div>
-          </div>
-          <div class="hero-shape hero-shape--5 absolute left-[18%] top-[5%] hidden h-[40px] w-[150px] lg:block">
-            <div class="hero-shape__pill"></div>
-          </div>
+        <!-- Giant wireframe monogram -->
+        <div class="pointer-events-none absolute inset-x-0 -bottom-[10%] flex justify-center select-none" aria-hidden="true">
+          <span class="font-display leading-none font-bold text-transparent" style="font-size: clamp(16rem, 46vw, 38rem); -webkit-text-stroke: 1px var(--color-line);">D</span>
         </div>
 
         <div class="relative z-10 mx-auto flex w-full max-w-4xl flex-col items-center">
@@ -148,44 +134,69 @@
             New York, NY &mdash; 40.73&deg; N / 73.79&deg; W
           </div>
 
-          <h1 data-reveal style="--reveal-delay:80ms" class="mt-6 font-display text-[clamp(3rem,12vw,9rem)] leading-[0.95] font-semibold tracking-tight">
+          <h1 data-reveal style="--reveal-delay:80ms" class="mt-8 font-display text-[clamp(3rem,11vw,8rem)] leading-[1.05] font-semibold tracking-tight">
             <span class="hero-gradient-text block">Dennis</span>
             <span class="hero-gradient-text block">Do</span>
           </h1>
 
-          <div data-reveal style="--reveal-delay:160ms" class="mt-8 flex flex-wrap items-center justify-center gap-3 font-mono text-sm uppercase tracking-[0.25em] text-ink-soft md:text-base">
-            <span>Currently building as a</span>
-            <span class="relative inline-flex h-[1.6em] min-w-[206px] overflow-hidden align-bottom md:min-w-[235px]">
-              <span id="role-rotator" class="absolute inset-0 flex items-center justify-center text-accent"></span>
-            </span>
-          </div>
-
-          <p data-reveal style="--reveal-delay:240ms" class="mt-8 max-w-xl font-sans text-base leading-relaxed text-ink-soft md:text-lg">
-            CS student at CUNY Queens College who moves fluidly between product
-            design and shipped code &mdash; most recently designing product at
-            <span class="font-medium text-ink">Scout</span>, after leading cross-university
-            teams at <span class="font-medium text-ink">NASA L&rsquo;SPACE</span>.
+          <p data-reveal style="--reveal-delay:160ms" class="mt-6 max-w-lg font-sans text-base leading-relaxed text-ink-soft md:text-lg">
+            Product Designer &amp; CS student shaping ambiguous problems into
+            shipped interfaces.
           </p>
 
-          <div data-reveal style="--reveal-delay:320ms" class="mt-12 flex flex-wrap items-center justify-center gap-4">
-            <a href="#projects" class="inline-flex items-center gap-2 rounded-full bg-accent px-6 py-3 font-mono text-xs uppercase tracking-[0.2em] text-cream transition-colors hover:bg-ink cursor-pointer">
+          <div data-reveal style="--reveal-delay:240ms" class="mt-10">
+            <a href="#projects" class="inline-flex items-center gap-2 rounded-full border border-line bg-paper-dim px-8 py-3.5 font-mono text-xs uppercase tracking-[0.2em] text-ink transition-colors hover:bg-ink hover:text-paper cursor-pointer">
               View My Work
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-3.5 w-3.5" aria-hidden="true">
                 <path d="M7 17 17 7" />
                 <path d="M7 7h10v10" />
               </svg>
             </a>
-            <a href="#contact" class="link-underline inline-flex items-center gap-2 px-2 py-3 font-mono text-xs uppercase tracking-[0.2em] text-ink transition-colors cursor-pointer">
-              Get In Touch
-            </a>
           </div>
         </div>
 
+        <!-- Social links -->
+        <div data-reveal style="--reveal-delay:360ms" class="absolute bottom-8 left-6 z-10 flex items-center gap-3 md:left-10">
+          <a
+            href="mailto:dennisnasa@gmail.com"
+            aria-label="Email Dennis"
+            class="inline-flex h-10 w-10 items-center justify-center rounded-full border border-line text-ink-soft transition-colors hover:border-accent hover:text-accent cursor-pointer"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" aria-hidden="true">
+              <rect width="20" height="16" x="2" y="4" rx="2" />
+              <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+            </svg>
+          </a>
+          <a
+            href="https://linkedin.com/in/dennis-do-coding"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Dennis on LinkedIn"
+            class="inline-flex h-10 w-10 items-center justify-center rounded-full border border-line text-ink-soft transition-colors hover:border-accent hover:text-accent cursor-pointer"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-4 w-4" aria-hidden="true">
+              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+            </svg>
+          </a>
+          <a
+            href="https://github.com/DennisD0"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Dennis on GitHub"
+            class="inline-flex h-10 w-10 items-center justify-center rounded-full border border-line text-ink-soft transition-colors hover:border-accent hover:text-accent cursor-pointer"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-4 w-4" aria-hidden="true">
+              <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.57.1.78-.25.78-.55 0-.27-.01-1.17-.015-2.12-3.2.7-3.88-1.36-3.88-1.36-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.75 2.7 1.25 3.36.96.1-.74.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.18-3.08-.12-.29-.51-1.46.11-3.04 0 0 .96-.31 3.15 1.17a10.9 10.9 0 0 1 5.74 0c2.19-1.48 3.15-1.17 3.15-1.17.62 1.58.23 2.75.11 3.04.74.8 1.18 1.82 1.18 3.08 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.06.78 2.14 0 1.55-.014 2.79-.014 3.17 0 .31.21.66.79.55A10.52 10.52 0 0 0 23.5 12c0-6.35-5.15-11.5-11.5-11.5z" />
+            </svg>
+          </a>
+        </div>
+
+        <!-- Scroll indicator -->
         <a
           data-reveal
           style="--reveal-delay:400ms"
           href="#about"
-          class="group absolute bottom-8 left-1/2 z-10 inline-flex -translate-x-1/2 flex-col items-center gap-3 font-mono text-[11px] uppercase tracking-[0.25em] text-ink-faint transition-colors hover:text-ink cursor-pointer"
+          class="group absolute bottom-8 right-6 z-10 inline-flex flex-col items-center gap-3 font-mono text-[11px] uppercase tracking-[0.25em] text-ink-faint transition-colors hover:text-ink cursor-pointer md:right-10"
           aria-label="Scroll to About section"
         >
           Scroll
@@ -236,7 +247,7 @@
                 <img
                   src="/dennis-portrait.jpg"
                   alt="Dennis Do smiling outdoors with flowers after his college graduation"
-                  class="aspect-[4/5] w-full rounded-[1.5rem] border border-ink/[0.08] object-cover shadow-2xl shadow-ink/20 transition-transform duration-500 ease-out hover:scale-[1.02]"
+                  class="aspect-[4/5] w-full rounded-[1.5rem] border border-ink/[0.08] object-cover shadow-2xl shadow-black/40 transition-transform duration-500 ease-out hover:scale-[1.02]"
                 />
                 <p class="mt-6 font-mono text-[11px] uppercase tracking-[0.3em] text-ink-faint">Dennis &mdash; Class of 2026</p>
               </div>
@@ -731,7 +742,7 @@
               type="button"
               data-reveal
               style="--reveal-delay:180ms"
-              class="group relative inline-flex items-center gap-3 border border-ink px-6 py-4 font-mono text-sm uppercase tracking-[0.15em] transition-colors hover:bg-ink hover:text-cream cursor-pointer sm:text-base"
+              class="group relative inline-flex items-center gap-3 border border-ink px-6 py-4 font-mono text-sm uppercase tracking-[0.15em] transition-colors hover:bg-ink hover:text-paper cursor-pointer sm:text-base"
               data-email="dennisnasa@gmail.com"
             >
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" aria-hidden="true">
