@@ -1,9 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-  <rect width="32" height="32" rx="6" fill="#0A0A0A"/>
-  <circle cx="16" cy="16" r="9" fill="none" stroke="#DD3C64" stroke-width="1.5"/>
-  <line x1="16" y1="1.5" x2="16" y2="6.5" stroke="#DD3C64" stroke-width="1.5"/>
-  <line x1="16" y1="25.5" x2="16" y2="30.5" stroke="#DD3C64" stroke-width="1.5"/>
-  <line x1="1.5" y1="16" x2="6.5" y2="16" stroke="#DD3C64" stroke-width="1.5"/>
-  <line x1="25.5" y1="16" x2="30.5" y2="16" stroke="#DD3C64" stroke-width="1.5"/>
-  <circle cx="16" cy="16" r="2.25" fill="#FDFDFF"/>
+  <rect width="32" height="32" rx="6" fill="#0a0a0a"/>
+  <defs>
+    <clipPath id="d-bowl">
+      <rect x="16" y="0" width="16" height="32"/>
+    </clipPath>
+  </defs>
+  <path d="M16,7 a9,9 0 1,0 0,18 a9,9 0 1,0 0,-18 Z M16,10.5 a5.5,5.5 0 1,0 0,11 a5.5,5.5 0 1,0 0,-11 Z" fill="#fdfdff" fill-rule="evenodd" clip-path="url(#d-bowl)"/>
+  <rect x="12.5" y="7" width="3.5" height="18" fill="#fdfdff"/>
 </svg>
