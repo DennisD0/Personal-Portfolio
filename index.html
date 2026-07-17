@@ -120,11 +120,13 @@
     <main id="main">
       <!-- ===== Hero ===== -->
       <section id="home" class="relative isolate flex min-h-screen flex-col items-center justify-center overflow-hidden bg-paper text-ink bg-grain px-6 pt-32 pb-24 text-center md:px-10">
-        <!-- Shader background: charcoal clouds with white comets -->
+        <!-- Dot-matrix canvas reveal shader -->
         <canvas id="hero-shader" class="pointer-events-none absolute inset-0 h-full w-full" aria-hidden="true"></canvas>
 
-        <!-- Ambient glow -->
-        <div class="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_50%_42%,_color-mix(in_srgb,var(--color-ink)_7%,transparent),_transparent_60%)]" aria-hidden="true"></div>
+        <!-- Radial vignette: draws the eye to the centre text -->
+        <div class="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_60%_55%_at_50%_50%,transparent_40%,var(--color-paper)_100%)]" aria-hidden="true"></div>
+        <!-- Bottom fade so the dots melt into the next section -->
+        <div class="pointer-events-none absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-[var(--color-paper)] to-transparent" aria-hidden="true"></div>
 
         <div class="relative z-10 mx-auto flex w-full max-w-4xl flex-col items-center">
           <div data-reveal class="inline-flex items-center gap-2.5 rounded-full border border-ink/[0.08] bg-ink/[0.03] px-4 py-1.5 font-mono text-xs uppercase tracking-[0.3em] text-ink-soft">
