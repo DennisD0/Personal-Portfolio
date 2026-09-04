@@ -152,7 +152,7 @@ void main(){
       gl.blendFunc(gl.SRC_ALPHA, gl.ONE)
 
       // Static uniforms — set once
-      gl.uniform1fv(uOpacities, [0.3, 0.3, 0.3, 0.5, 0.5, 0.5, 0.8, 0.8, 0.8, 1.0])
+      gl.uniform1fv(uOpacities, [0.12, 0.12, 0.12, 0.2, 0.2, 0.2, 0.32, 0.32, 0.32, 0.4])
       // Six white-ink color slots (matches --color-ink #f4f3f1)
       gl.uniform3fv(uColors, [
         0.957, 0.953, 0.945,
