@@ -21,12 +21,6 @@
   --color-cream: #fdfdff;
   --color-cream-soft: #9c9ba0;
 
-  --animate-marquee: marquee 38s linear infinite;
-}
-
-@keyframes marquee {
-  from { transform: translateX(0); }
-  to { transform: translateX(-50%); }
 }
 
 html {
@@ -86,12 +80,6 @@ body {
 .link-underline:hover,
 .link-underline:focus-visible {
   background-size: 100% 1px;
-}
-
-/* Marquee edge fade */
-.marquee-fade {
-  mask-image: linear-gradient(to right, transparent, black 6%, black 94%, transparent);
-  -webkit-mask-image: linear-gradient(to right, transparent, black 6%, black 94%, transparent);
 }
 
 /* Dot-grid backdrop */
@@ -176,7 +164,7 @@ body {
     transform: none;
     transition: none;
   }
-  .animate-marquee, .animate-ping, .animate-bounce {
+  .animate-ping, .animate-bounce {
     animation: none !important;
   }
   #mobile-menu {
